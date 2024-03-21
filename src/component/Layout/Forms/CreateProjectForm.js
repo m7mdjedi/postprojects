@@ -26,7 +26,7 @@ const CreateProjectForm = () => {
     const projectRef = collection(db, "projects");
     await addDoc(projectRef, project);
     dispatch(getProjects());
-    navigate("/");
+    navigate("/projects");
   };
 
   return (
